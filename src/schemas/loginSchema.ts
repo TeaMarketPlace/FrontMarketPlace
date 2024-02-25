@@ -1,10 +1,9 @@
 import * as zod from "zod";
 
 // Object for validation data
-
 export const LoginFormSchema = zod.object({
   // Validation for email
-  email: zod.string().email().min(2, { message: "Email is required" }),
+  userName: zod.string().min(2, { message: "User name is required" }),
   // Validation for password
   password: zod
     .string()
