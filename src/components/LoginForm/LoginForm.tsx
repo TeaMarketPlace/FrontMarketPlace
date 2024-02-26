@@ -1,6 +1,7 @@
 import { zodResolver } from "@hookform/resolvers/zod";
 import { LoginFormType, LoginFormSchema } from "@/schemas/loginSchema";
 import { useForm } from "react-hook-form";
+import {Link} from "react-router-dom"
 
 // import shadcn ui components
 import {
@@ -88,20 +89,20 @@ const LoginForm = () => {
 
         <div className="flex justify-between items-center mb-[60px]">
           {/* //TODO Make it navigate to the certain page */}
-          <a href="#" className="text-primary cursor-pointer">Recover password</a>
+          <Link to="#" className="text-primary cursor-pointer">Recover password</Link>
           <Button type="submit" className="rounded-[25px] text-lg py-[10px] px-[31px]">Sign in</Button>
         </div>
 
         <h5 className="text-secondary-foreground text-lg mb-6">or sign it with</h5>
 
         {/* Sign in icons */}
-        <div className="flex justify-center mb-9">
-          <Button className="text-[28px] text-black" variant={"ghost"}>
+        <div className="flex justify-center mb-9 gap-7">
+          <Link to={"/"} className="text-[28px] text-black text-opacity-80">
             <FaFacebook />
-          </Button>
-          <Button className="text-[28px] text-black w-fit" variant={"ghost"}>
+          </Link>
+          <Link to={"/"} className="text-[28px] text-black text-opacity-80">
             <FaGoogle />
-          </Button>
+          </Link>
         </div>
 
         <div className="flex justify-center items-center text-lg gap-1">
