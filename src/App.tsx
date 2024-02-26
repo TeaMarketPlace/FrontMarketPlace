@@ -1,10 +1,14 @@
-import "../App.scss";
+import LoginForm from "./components/LoginForm/LoginForm";
+
+import "./App.scss";
+
+// TODO Need to move this component to Login page.  
 
 function App() {
   return (
-    <>
-      <h1 className="text-xl font-bold text-blue-500">Welcome Market Place</h1>
-    </>
+    <div className="bg-background flex justify-center items-center">
+      <LoginForm/>
+    </div>
   );
 }
 
