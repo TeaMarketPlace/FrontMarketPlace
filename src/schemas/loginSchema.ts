@@ -3,11 +3,12 @@ import * as zod from "zod";
 // Object for validation data
 export const LoginFormSchema = zod.object({
   // Validation for email
-  userName: zod.string().min(2, { message: "User name is required" }),
+  email: zod.string().email().min(2, { message: "Email is required" }),
   // Validation for password
   password: zod
     .string()
-    .min(2, { message: "Do not forget to enter the password !" }),
+    .min(6, { message: "Password requires at least six charachters" })
+    .regex(/^(?=.*[A-Za-zА-Яа-я])(?=.*\d).+/, {message: "Password should consist with at least one capital letter and one digit"}),
 });
 
 // Create type based on the object

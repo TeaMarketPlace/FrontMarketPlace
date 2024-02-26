@@ -23,7 +23,7 @@ const LoginForm = () => {
   const form = useForm<LoginFormType>({
     resolver: zodResolver(LoginFormSchema),
     defaultValues: {
-      userName: "",
+      email: "",
       password: "",
     },
   });
@@ -52,12 +52,12 @@ const LoginForm = () => {
           {/* Field for username */}
           <FormField
             control={form.control}
-            name="userName"
+            name="email"
             render={({ field }) => (
               <FormItem className="flex flex-col">
                 <FormControl>
                   <Input
-                    placeholder="User name"
+                    placeholder="Email"
                     icon={<AiOutlineMail color="black" size={20} />}
                     {...field}
                   />
@@ -87,7 +87,6 @@ const LoginForm = () => {
         </div>
 
         <div className="flex justify-between items-center mb-[60px]">
-
           {/* //TODO Make it navigate to the certain page */}
           <a href="#" className="text-primary cursor-pointer">Recover password</a>
           <Button type="submit" className="rounded-[25px] text-lg py-[10px] px-[31px]">Sign in</Button>
