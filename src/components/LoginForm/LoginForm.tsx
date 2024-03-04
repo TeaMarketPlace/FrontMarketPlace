@@ -107,7 +107,6 @@ const LoginForm = () => {
         <h5 className="text-secondary-foreground text-lg mb-6">
           or sign it with
         </h5>
-
         {/* Sign in icons */}
         <div className="flex justify-center mb-9 gap-7">
           <Link
