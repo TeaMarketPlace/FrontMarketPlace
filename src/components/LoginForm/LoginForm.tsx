@@ -37,7 +37,7 @@ const LoginForm = () => {
   return (
     <Form {...form}>
       <form
-        className="w-[522px] bg-white px-[87px] pt-[80px] pb-[64px] rounded-[5px]"
+        className="w-[522px] bg-white px-[87px] pt-[80px] pb-[64px] rounded-[5px] mx-auto"
         onSubmit={form.handleSubmit(onSubmit)}
       >
         {/* Login form header */}
