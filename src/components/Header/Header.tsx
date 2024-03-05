@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "../ui/button";
+import ThemeToggler from "../ui/theme-toggler";
 
 export const Header = () => {
   // handler for searching
@@ -32,13 +33,13 @@ export const Header = () => {
 
       {/* Searchbar */}
       <div className="flex items-center h-[40px] gap-[18px]">
-        <div className="border-b-black/70 border-b-[1px] text-muted py-[4px] w-[304px] flex items-center gap-1">
-          <svg width={25} height={25}>
+        <div className="border-b-secondary border-b-[1px] text-muted py-[4px] w-[304px] flex items-center gap-1">
+          <svg width={25} height={25} className="fill-secondary">
             <use xlinkHref={`./icon-sprite.svg#search`} />
           </svg>
           <input
             placeholder="Пошук..."
-            className="w-full outline-none placeholder:text-muted"
+            className="w-full outline-none placeholder:text-muted bg-transparent"
             type="text"
           />
         </div>
@@ -65,11 +66,7 @@ export const Header = () => {
           </Link>
         </Button>
 
-        <Button variant={"link"} className="w-[43px] h-[43px] p-[7px]">
-          <svg className="fill-transparent h-full w-full">
-            <use xlinkHref={`./icon-sprite.svg#moon`} />
-          </svg>
-        </Button>
+        <ThemeToggler />
       </nav>
     </header>
   );

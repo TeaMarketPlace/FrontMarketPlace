@@ -10,39 +10,43 @@
   padding: 2rem;
   text-align: center;
   font-family: Helvetica;
+  transition: color .6s ease none;
 }
 
 @layer base {
+  // Light theme
   :root {
-    --background: 0 0% 100%; // #ffffff
+    --background: 0, 0%, 100% // #ffffff
     --foreground: 0, 0%, 0%; // #000
 
     --primary: 209, 87%, 37%, 1; // #0C62B1
-    --primary-foreground: 0 0% 100%; // #ffffff
+    --primary-foreground: 0, 0%, 100%; // #ffffff
 
-    --secondary: 0 0% 2% 100%; // #050505
-    --secondary-foreground: 0, 0%, 0%, 0.6; // #ffffff
+    --secondary: 0, 0%, 2%, 100%; // #050505
+    --secondary-foreground: 0, 0%, 100%; // #ffffff
 
-    --muted: 0 0% 6% 76%; // #0F0F0F
-    --muted-secondary: 0 0% 35% 100%; // #585858
+    --muted: 0, 0%, 6%, 76%; // #0F0F0F
+    --muted-secondary: 0, 0%, 35%, 100%; // #585858
 
     --heading-foreground: 40, 4%, 15%, 1; // #272624
   }
 
+  // Dark theme
   .dark {
-    --background: 0 0% 9% 100%; // #181818
-    --foreground: 0 0% 100%; // #ffffff
+    --background: 0, 0%, 9%; // #181818
+    --foreground: 0, 0%, 100%; // #ffffff
 
     --primary: 209, 87%, 37%, 1; // #0C62B1
-    --primary-foreground: 0 0% 100%; // #ffffff
+    --primary-foreground: 0, 0%, 100%; // #ffffff
 
+    --secondary: 0, 0%, 100%; // #ffffff
+    --secondary-foreground: 0, 0%, 0%; // #000
+    
     // ! Find out which color should be in the dark mode
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
     --heading-foreground: 40, 4%, 15%, 1; // #272624
 
-    --muted: 0 0% 100% 76%; // #fff / 76
-    --muted-secondary: 0 0% 100%; // #fff
+    --muted: 0, 0%, 100%, 76%; // #fff / 76
+    --muted-secondary: 0, 0%, 100%; // #fff
   }
 }
 
