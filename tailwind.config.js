@@ -37,6 +37,11 @@ module.exports = {
         },
       },
 
+      fontFamily: {
+        "inter": ["Inter", "sans-serif"],
+        "helvetica": ["Helvetica", "sans-serif"]
+      },
+
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

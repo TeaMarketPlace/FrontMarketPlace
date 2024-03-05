@@ -5,8 +5,6 @@ import "./App.scss";
 import Layout from "./components/Layout/Layout.tsx";
 import { Main } from "./pages/Main.tsx";
 
-// TODO Need to move this component to Login page.
-
 function App() {
   return (
     <>

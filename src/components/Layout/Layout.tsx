@@ -10,8 +10,8 @@ const Layout = () => {
       <Suspense>
         <Outlet />
       </Suspense>
-      <TestButton title="Login" route="/login" />
-      <TestButton title="Home" route="/" />
+      {/* <TestButton title="Login" route="/login" />
+      <TestButton title="Home" route="/" /> */}
     </div>
   );
 };
