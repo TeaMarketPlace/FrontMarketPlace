@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Комп'ютери та комплектуючі",
+    "img": "./icon-sprite.svg#laptop",
+    "subCategories": [
+      { "id": "1.1", "name": "Ноутбуки" },
+      { "id": "1.2", "name": "Відеокарти" },
+      { "id": "1.3", "name": "Процесори" }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Пральні машини",
+    "img": "./icon-sprite.svg#washing",
+    "subCategories": [
+      { "id": "2.1", "name": "Фронтальні" },
+      { "id": "2.2", "name": "Вертикальні" },
+      { "id": "2.3", "name": "Вузькі" }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Смартфони",
+    "img": "./icon-sprite.svg#smartphone",
+    "subCategories": [
+      { "id": "3.1", "name": "Флагмани" },
+      { "id": "3.2", "name": "Бюджетні моделі" },
+      { "id": "3.3", "name": "Середнього класу" }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Фотоапарати",
+    "img": "./icon-sprite.svg#camera",
+    "subCategories": [
+      { "id": "4.1", "name": "Дзеркальні" },
+      { "id": "4.2", "name": "Бездзеркальні" },
+      { "id": "4.3", "name": "Компактні" }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Навушники",
+    "img": "./icon-sprite.svg#headphones",
+    "subCategories": [
+      { "id": "5.1", "name": "Накладні" },
+      { "id": "5.2", "name": "Вкладиші" },
+      { "id": "5.3", "name": "Бездротові" }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Аксесуари",
+    "img": "./icon-sprite.svg#mouse",
+    "subCategories": [
+      { "id": "6.1", "name": "Чохли для смартфонів" },
+      { "id": "6.2", "name": "Захисні скла" },
+      { "id": "6.3", "name": "Зарядні пристрої" }
+    ]
+  }
+]
