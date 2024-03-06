@@ -17,8 +17,7 @@ import { Input } from "../ui/input";
 
 // import icons
 import { FaFacebook, FaGoogle } from "react-icons/fa";
-import EmailIcon from "../../assets/icons/email-icons.svg";
-import PasswordIcon from "../../assets/icons/password-icons.svg";
+
 
 const LoginForm = () => {
   const form = useForm<LoginFormType>({
@@ -37,7 +36,7 @@ const LoginForm = () => {
   return (
     <Form {...form}>
       <form
-        className="w-[522px] bg-white px-[87px] pt-[80px] pb-[64px] rounded-[5px]"
+        className="w-[522px] bg-white px-[87px] pt-[80px] pb-[64px] rounded-[5px] mx-auto"
         onSubmit={form.handleSubmit(onSubmit)}
       >
         {/* Login form header */}
@@ -59,7 +58,7 @@ const LoginForm = () => {
                 <FormControl>
                   <Input
                     placeholder="Email"
-                    icon={<img src={EmailIcon} />}
+                    // icon={<img src={EmailIcon} />}
                     {...field}
                   />
                 </FormControl>
@@ -79,7 +78,7 @@ const LoginForm = () => {
                     type="password"
                     placeholder="Password"
                     {...field}
-                    icon={<img src={PasswordIcon} />}
+                    // icon={<img src={PasswordIcon} />}
                   />
                 </FormControl>
                 <FormMessage />
@@ -107,7 +106,6 @@ const LoginForm = () => {
         <h5 className="text-secondary-foreground text-lg mb-6">
           or sign it with
         </h5>
-
         {/* Sign in icons */}
         <div className="flex justify-center mb-9 gap-7">
           <Link
