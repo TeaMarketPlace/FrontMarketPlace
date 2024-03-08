@@ -17,8 +17,7 @@ import { Input } from "../ui/input";
 
 // import icons
 import { FaFacebook, FaGoogle } from "react-icons/fa";
-import EmailIcon from "../../assets/icons/email-icons.svg";
-import PasswordIcon from "../../assets/icons/password-icons.svg";
+
 
 const LoginForm = () => {
   const form = useForm<LoginFormType>({
@@ -59,7 +58,7 @@ const LoginForm = () => {
                 <FormControl>
                   <Input
                     placeholder="Email"
-                    icon={<img src={EmailIcon} />}
+                    // icon={<img src={EmailIcon} />}
                     {...field}
                   />
                 </FormControl>
@@ -79,7 +78,7 @@ const LoginForm = () => {
                     type="password"
                     placeholder="Password"
                     {...field}
-                    icon={<img src={PasswordIcon} />}
+                    // icon={<img src={PasswordIcon} />}
                   />
                 </FormControl>
                 <FormMessage />

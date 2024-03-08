@@ -4,3 +4,12 @@
     line-height: 1.12;
     letter-spacing: 0;
 }
+
+.border-test{
+    position: absolute;
+    border: 1px solid green;
+    background: black;
+    color: white;
+    top: 0;
+    right: -550px;
+}
