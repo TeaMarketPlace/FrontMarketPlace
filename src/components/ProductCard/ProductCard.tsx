@@ -9,17 +9,10 @@ import ProductImage from "@/image/product.png";
 import { Button } from "../ui/button";
 
 const ProductCard = () => {
-  const formatPrice = (price: number) => {
-    if (price && typeof price === "number") {
-      const priceToString = price.toString();
-      if (priceToString.length > 3) {
-        return priceToString.replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-      }
-    }
-    return price;
-  };
+  // function that divides a number into digits
+  const formatPrice = (price: number) => price.toLocaleString();
+
   return (
-    // <div className="container mx-auto my-10 ">
     <Card className="w-[178px]">
       <CardHeader className="relative p-0">
         <div className=" bg-[#f2f2f2] rounded-[10px] justify-center items-center overflow-hidden">
@@ -32,7 +25,7 @@ const ProductCard = () => {
         <div className="absolute left-2 top-[6px] m-h-[18px] bg-[#0c62b1] rounded-[20px]  px-[6px] py-[2px] text-white text-[12px] font-normal font-helvetica">
           знижка
         </div>
-        <div className="absolute ] right-[9px] top-[6px] m-h-[18px] bg-white rounded-[20px]  px-[6px] py-[2px] text-black text-[12px] font-normal font-helvetica border-[0.5px] border-[#a2a2a2]">
+        <div className="absolute right-[9px] top-[6px] m-h-[18px] bg-white rounded-[20px]  px-[6px] py-[2px] text-black text-[12px] font-normal font-helvetica border-[0.5px] border-[#a2a2a2]">
           техніка
         </div>
       </CardHeader>
@@ -54,16 +47,15 @@ const ProductCard = () => {
         </Button>
 
         <div>
-          <p className="text-[12px] font-[300] text-muted-secondary text-start line-through leading-[14px] text-end">
+          <p className="text-[12px] font-[300] text-muted-secondary line-through leading-[14px] text-end">
             {formatPrice(19500)} ₴
           </p>
-          <p className="text-[14px] font-bold text-foreground text-start leading-4 text-end">
+          <p className="text-[14px] font-bold text-foreground leading-4 text-end">
             {formatPrice(21999)} ₴
           </p>
         </div>
       </CardFooter>
     </Card>
-    // </div>
   );
 };
 
