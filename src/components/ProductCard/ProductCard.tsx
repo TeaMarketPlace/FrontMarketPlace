@@ -31,7 +31,7 @@ const ProductCard = () => {
       </CardHeader>
       <CardContent className="mt-[6px] pl-2 pr-[10px] pb-0 mb-[5px] items-start">
         <CardTitle className="text-[12px] text-start">
-          Apple iPhone 11 64GB Black 
+          Apple iPhone 11 64GB Black
         </CardTitle>
         <svg
           width={20}
